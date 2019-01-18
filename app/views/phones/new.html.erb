@@ -1,0 +1,11 @@
+<h1> Add a new phone </h1>
+
+<%= form_for @phone do |f| %>
+  <%= f.label :number %>:
+  <%= f.text_field :number %><br />
+
+  <%= f.label :manufacturer %>:
+  <%= f.text_field :manufacturer %><br />
+
+  <%= f.submit %>
+<% end %>
