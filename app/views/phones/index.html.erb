@@ -1,0 +1,15 @@
+<h1>Phones</h1>
+<%= link_to 'Add a phone' , new_phone_path %>
+
+ <table>
+   <tr>
+     <th>Number</th>
+     <th>Manufacturer</th>
+   </tr>
+   <% @phones.each do |phone| %>
+     <tr>
+       <td><%= phone.number %></td>
+       <td><%= phone.manufacturer %></td>
+     </tr>
+   <% end %>
+ </table>
